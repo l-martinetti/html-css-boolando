@@ -4,15 +4,41 @@
     box-sizing: border-box;
 }
 
+/* debug */
+
+.debug {
+    border: 1px solid black;
+}
+
 /* Utils */
 
 .container {
     margin: 0 auto;
 }
 
+.d-flex {
+    display: flex;
+}
+
+.menu {
+    color: #fff;
+}
+
 /* Header */
 
 header {
     width: 100%;
+    height: 75px;
     background-color: #FE6900;
+}
+
+header .container {
+    max-width: 1000px;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-width: 100px;
 }
