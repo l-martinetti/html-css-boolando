@@ -2,19 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
-/* debug */
-
-.debug {
-    border: 1px solid black;
-}
 
 /* Utils */
 
 .container {
     margin: 0 auto;
-    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
 }
 
 .d-flex {
@@ -23,6 +21,10 @@
 
 .white-txt {
     color: #fff;
+}
+
+ul, ol {
+    list-style: none;
 }
 
 /* Header */
@@ -37,14 +39,16 @@ header {
 }
 
 header .container {
-    max-width: 1000px;
     height: 100%;
-    justify-content: space-between;
     align-items: center;
 }
 
 header img {
     max-width: 100px;
+}
+
+header ul li {
+    padding: 0 5px;
 }
 
 /* Main */
@@ -53,34 +57,94 @@ main {
     padding-top: 75px;
 }
 
-main div.container {
-    max-width: 1000px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    height: 1000px;                  /*debug*/
-    background-color: red;        /*debug*/
-}
+/* Cards */
 
 div.card {
-    max-width: 300px;
+    width: 32%;
+    margin-top: 40px;
     position: relative;
 }
 
 div.card img {
-    display: inline-block;
-    max-width: 300px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.hover-img {
+    display: block;
 }
 
 .start-img {
     position: absolute;
     top: 0;
-    z-index: 2;
 }
 
-.hover-img {
+.card:hover .start-img {
+    display:none
+}
+
+.bottom-row-img {
+    bottom: 0;
+}
+
+.top-row-img {
+    
+}
+
+/* Label */
+
+div.label {
     position: absolute;
-    top: 0;
-    z-index: 1;
+    z-index: 2;
+    bottom: 100px;
+    padding: 5px 10px;
+    background-color: red;
 }
 
+.label.green {
+    background-color: green;
+    left: 60px;
+}
+
+.label.green-no-sale {
+    background-color: green;
+    left: 0;
+}
+
+/* Captions */
+
+.caption {
+   ;
+}
+
+span strong {
+    color: red;
+}
+
+span span {
+    text-decoration:line-through
+}
+
+/* Footer */
+
+footer {
+    height: 100px;
+    background-color: #1A1A1A;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+footer .container {
+    height: 100px;
+    align-content: center;
+}
+
+.white-txt li {
+    font-size: 0.9rem;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.social li {
+    font-size: 1.2rem;
+}

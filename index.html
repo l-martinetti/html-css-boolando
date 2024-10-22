@@ -5,82 +5,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Boolando</title>
 </head>
 <body>
     
     <header>
-        <div class="container d-flex debug">
+        <div class="container d-flex">
             <nav>
-                <ul class="white-txt">
-                    <li>Donna</li>
-                    <li>Uomo</li>
-                    <li>Bambini</li>
+                <ul class="d-flex white-txt">
+                    <li><strong>Donna</strong></li>
+                    <li><strong>Uomo</strong></li>
+                    <li><strong>Bambini</strong></li>
                 </ul>
             </nav>
 
             <img src="assets/img/boolean-logo.png" alt="boolean">
 
             <nav>
-                <ul class="white-txt">
-                    <li>icona 1</li>
-                    <li>icona 2</li>
-                    <li>icona 3</li>
+                <ul class="d-flex white-txt">
+                    <li><i class="fa-regular fa-user"></i></li>
+                    <li><i class="fa-regular fa-heart"></i></li>
+                    <li><i class="fa-solid fa-bag-shopping"></i></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <div class="container d-flex debug">
-            <div class="card debug">
-                <img class="start-img" src="assets/img/1b.webp" alt="RELAXED FI TEE UNISEX">
-                <img class="hover-img" src="assets/img/1.webp" alt="">
-                <div class="label white-txt">-50%</div>
-                <div class="label green"></div>
-                <div class="favourite"></div>
-                <div class="caption"></div>
-            </div>     
-            <div class="card debug">
-                <img src="assets/img/2b.webp" alt="">
-                <img src="" alt="">
-                <div class="label white-txt">-30%</div>
-                <div class="label green white-txt">Sostenibilità</div>
-                <div class="favourite"></div>
-                <div class="caption"></div>
-            </div>     
-            <div class="card debug">
-                <img src="assets/img/3b.webp" alt="">
-                <img src="" alt="">
-                <div class="label white-txt">-30%</div>
-                <div class="label green white-txt">Sostenibilità</div>
-                <div class="favourite"></div>
-                <div class="caption"></div>
-            </div>     
-            <div class="card debug">
-                <img src="assets/img/4b.webp" alt="">
-                <img src="" alt="">
+        <!-- cards -->
+        <div class="container d-flex">
+            <div class="card">
+                <div class="top-row-img">
+                    <img class="hover-img" src="assets/img/1.webp" alt="">
+                    <img class="start-img" src="assets/img/1b.webp" alt="RELAXED FI TEE UNISEX">
+                </div>
                 <div class="label white-txt">-50%</div>
                 <div class="label green white-txt">Sostenibilità</div>
                 <div class="favourite"></div>
-                <div class="caption"></div>
-            </div>     
-            <div class="card debug">
-                <img src="assets/img/5b.webp" alt="">
-                <img src="" alt="">
+                <div class="caption">
+                    <span>Levi's</span>
+                    <h4>RELAXED FIT TEE UNISEX</h4>
+                    <span><strong>14,99&euro;</strong> <span>29,99&euro;</span></span>
+                </div>
+            </div>    
+
+            <div class="card">
+                <div class="top-row-img">
+                    <img class="hover-img" src="assets/img/2.webp" alt="">
+                    <img class="start-img" src="assets/img/2b.webp" alt="ROSES TEE">
+                </div>
+                <div class="label white-txt">-30%</div>
                 <div class="favourite"></div>
-                <div class="caption"></div>
+                <div class="caption">
+                    <span>Guess</span>
+                    <h4>ROSES TEE</h4>
+                    <span><strong>20,99&euro;</strong> <span>29,99&euro;</span></span>
+                </div>
             </div>     
-            <div class="card debug">
-                <img src="assets/img/6b.webp" alt="">
-                <img src="" alt="">
+
+            <div class="card">
+                <div class="top-row-img">
+                    <img class="hover-img" src="assets/img/3.webp" alt="">
+                    <img class="start-img" src="assets/img/3b.webp" alt="">
+                </div>
+                <div class="label white-txt">-30%</div>
+                <div class="favourite"></div>
+                <div class="caption">
+                    <span>Come Zucchero Filato</span>
+                    <h4>VOGLIA DI COLORI PASTELLO</h4>
+                    <span><strong>129,99&euro;</strong> <span>184,99&euro;</span></span>
+                </div>
+            </div>     
+
+            <div class="card">
+                <div class="bottom-row-img">
+                    <img class="hover-img" src="assets/img/4.webp" alt="">
+                    <img class="start-img" src="assets/img/4b.webp" alt="">
+                </div>
+                <div class="label white-txt">-50%</div>
                 <div class="label green white-txt">Sostenibilità</div>
                 <div class="favourite"></div>
-                <div class="caption"></div>
+                <div class="caption">
+                    <span>Levi's</span>
+                    <h4>TEE UNISEX</h4>
+                    <span><strong>14,99&euro;</strong> <span>29,99&euro;</span></span>
+                </div>
+            </div> 
+
+            <div class="card">
+                <div class="bottom-row-img">
+                    <img class="hover-img" src="assets/img/5.webp" alt="">
+                    <img class="start-img" src="assets/img/5b.webp" alt="">
+                </div>
+                <div class="favourite"></div>
+                <div class="caption">
+                    <span>Maya Deluxe</span>
+                    <h4>STRIPE BODICE</h4>
+                    <span><strong>99,99&euro;</strong></span>
+                </div>
+            </div>     
+
+            <div class="card">
+                <div class="bottom-row-img">
+                    <img class="hover-img" src="assets/img/6.webp" alt="">
+                    <img class="start-img" src="assets/img/6b.webp" alt="">
+                </div> 
+                <div class="label green-no-sale white-txt">Sostenibilità</div>
+                <div class="favourite"></div>
+                <div class="caption">
+                    <span>Esprit</span>
+                    <h4>MAGLIONE - BLACK</h4>
+                    <span><strong>29,99&euro;</strong></span>
+                </div>
             </div>     
         </div>
+        <!-- /cards -->
     </main>
 
-    <footer>F</footer>
+    <footer>
+        <div class="container d-flex">
+            <nav>
+                <ul>
+                    <li class="white-txt"><h4>Boolando s.r.l.</h4></li>
+                    <li>
+                        <ul class="white-txt  d-flex">
+                            <li><a href="#"></a>Informazioni legali</li>
+                            <li><a href="#"></a>Informativa sulla privacy</li>
+                            <li><a href="#"></a>Diritto di recesso</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav>
+                <ol>
+                    <li><h4 class="white-txt">Trovaci anche su</h4></li>
+                    <li>
+                        <ul class="white-txt d-flex social">
+                            <li><a href="#"></a><i class="fa-brands fa-square-twitter"></i></li>
+                            <li><a href="#"></a><i class="fa-brands fa-facebook"></i></li>
+                            <li><a href="#"></a><i class="fa-brands fa-instagram"></i></li>
+                            <li><a href="#"></a><i class="fa-brands fa-pinterest-p"></i></li>
+                            <li><a href="#"></a><i class="fa-brands fa-youtube"></i></li>
+                        </ul>
+                    </li>
+                </ol>
+            </nav>
+
+        </div>
+    </footer>
 </body>
 </html>
